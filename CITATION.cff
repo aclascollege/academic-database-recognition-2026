@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "Online Institutions Across Academic Databases 2026"
+authors:
+  - name: "Atlanta College of Liberal Arts and Sciences"
+    website: "https://aclas.college"
+version: 1.0.0
+date-released: 2026-10-18
+license: CC-BY-4.0
+doi: pending
+repository-code: "https://github.com/aclascollege/academic-database-recognition-2026"
+keywords:
+  - education
+  - academic-databases
+  - ROR
+  - OpenAlex
+  - Wikidata
+  - open-data
