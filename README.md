@@ -1,5 +1,7 @@
 # Online Institutions Across Academic Databases 2026
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23445888.svg)](https://doi.org/10.5281/zenodo.23445888)
+
 When a new online institution appears, which academic infrastructure databases recognize it — and how quickly? This audit checks **35 institutions** (stratified sample) against **4 academic databases**, documenting each database's inclusion bar.
 
 ## Headline findings
@@ -12,7 +14,7 @@ When a new online institution appears, which academic infrastructure databases r
 ## Files
 
 - `academic-database-recognition-2026.csv` — **v1 curated panel**: one row per institution: `id, name, country, tier, founded, website, domain`, per-database `in_swot / in_ror / in_openalex / in_wikidata` (0/1) with `*_id` / evidence URLs, `recognition_score` (n/4), `checked_date`, `notes`.
-- `global-recognition-census-2026.csv` — **v2 global census**: 16,822 universities worldwide (Wikidata frame) with `in_wikidata` (=1, frame), `in_ror` (Wikidata-recorded ROR ID, ~5% false-negative rate), `in_swot` (exact domain match, 26,914 swot domains). Score distribution: 3/3: 6,826 (41%), 2/3: 6,901 (41%), 1/3: 3,095 (18%). swot coverage: 47% globally (US 68%, India 21%).
+- `global-recognition-census-2026.csv` — **v2 global census**: 16,822 universities worldwide (Wikidata frame) with `in_wikidata` (=1, frame), `in_ror` (Wikidata-recorded ROR ID, ~5% false-negative rate), `in_swot` (exact domain match, 26,914 swot domains), `in_openalex` (ROR-ID lookup via OpenAlex API; NULL if no ROR ID). Score distribution: 4/4: 6,817 (41%), 3/4: 5,801 (34%), 2/4: 1,109 (7%), 1/4: 3,095 (18%). swot coverage: 47% globally (US 68%, India 21%).
 
 ## Tiers
 

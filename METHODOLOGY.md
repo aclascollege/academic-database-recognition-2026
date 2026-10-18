@@ -11,7 +11,7 @@
 **Checks (per institution):**
 - `in_ror`: 1 if Wikidata records a ROR ID (P6782) for the institution. This is a *proxy* for ROR membership — it reflects Wikidata's curation, not a live ROR query. Spot-check of 40 `in_ror=0` institutions against the ROR API (domain-confirmed) found a ~5% false-negative rate.
 - `in_swot`: 1 if the institution's official domain (or a parent domain) appears in the JetBrains swot repository (github.com/JetBrains/swot, cloned 2026-10-18, 26,914 domains). Exact domain match — high precision.
-- `in_openalex`: omitted for v2. Per-institution API checks at 16k scale are infeasible; see v1 for the 4-database design.
+- `in_openalex`: 1 if the institution's ROR ID resolves in OpenAlex (api.openalex.org, `filter=ror:`, batched 50/call, 2026-10-18; 12,608/12,626 ROR IDs found). Institutions without a ROR ID are NULL (not checked — OpenAlex has no Wikidata-QID filter). 0 = has ROR ID but absent from OpenAlex (n=18).
 
 **Limitations:** Wikidata's university coverage skews toward institutions with good structured data (undercounts small/new institutions in some regions). Domain matching misses institutions whose swot entry uses a different domain variant. ROR column is Wikidata-mediated (see above).
 
