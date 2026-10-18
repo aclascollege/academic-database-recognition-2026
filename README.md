@@ -4,7 +4,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23445888.svg)](https://doi.org/10.5281/zenodo.23445888) [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/aclascollege/academic-database-recognition-2026) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97_Hugging_Face-Dataset-yellow)](https://huggingface.co/datasets/ACLASCollege/academic-database-recognition-2026)
 
-When a new online institution appears, which academic infrastructure databases recognize it — and how quickly? This audit checks **35 institutions** (stratified sample) against **4 academic databases**, documenting each database's inclusion bar.
+When a new online institution appears, which academic infrastructure databases recognize it — and how quickly? This audit checks institutions against **4 academic databases** (swot, ROR, OpenAlex, Wikidata), documenting each database's inclusion bar: a **v1 curated panel of 35 institutions** (stratified sample) plus a **v2 global census of 16,822 universities** worldwide.
 
 > **Also on Kaggle:** [aclascollege/academic-database-recognition-2026](https://www.kaggle.com/datasets/aclascollege/academic-database-recognition-2026) — download the CSV without git, or fork it straight into a notebook.
 
